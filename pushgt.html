@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Example</title>
+</head>
+<body>
+  <h1 id="greeting">Greeting</h1>
+  <script>
+    var greeting = {
+      visitor: "Mr. ozzy",
+      meridiem: "PM"
+      
+    };
+    var greetingElement = document.getElementById("greeting");
+    if (greeting.meridiem === "AM") {
+      greetingElement.textContent = "Good morning, " + greeting.visitor + "!";
+    } else if (greeting.meridiem === "PM") {
+      greetingElement.textContent = "Good evening, " + greeting.visitor + "!";
+    }
+  </script>
+</body>
+</html>

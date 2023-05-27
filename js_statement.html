@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example if-else statement</title>
+  </head>
+  <body>
+    <label for="worktime">Enter your work time:</label>
+    <input type="number" id="worktime">
+    <button onclick="checktime()">check</button>
+    <p id="result"></p>
+
+    <script>
+        function checktime() {
+            let hours = document.getElementById("worktime").value;
+            if (hours >=5) {
+                document.getElementById("result").innerHTML = "staff overtime paid 10k.";
+            }   else {
+                document.getElementById("result").innerHTML = "staff not given overtime.";
+            }
+         }
+  </script>
+ </body>
+</html>
