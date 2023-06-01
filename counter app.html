@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+    <style>
+        .counter {
+            font-size: 24px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <button onclick="decrease()">-</button>
+        <span id="count">0</span>
+        <button onclick="increase()">+</button>
+    </div>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        // Get the counter element
+        const counterElement = document.getElementById('count');
+
+        // Counter value
+        let count = 0;
+
+        // Function to decrease the counter
+        function decrease() {
+            count--;
+            counterElement.textContent = count;
+        }
+
+        // Function to increase the counter
+        function increase() {
+            count++;
+            counterElement.textContent = count;
+        }
+
+        // Function to reset the counter
+        function reset() {
+            count = 0;
+            counterElement.textContent = count;
+        }
+    </script>
+</body>
+</html>
